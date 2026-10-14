@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Dopa for Vibe Codersのプライバシーポリシー。GitHub・AIへの送信、端末保存、任意のニュース・天気、購入、サポート情報の扱い。"><meta name="theme-color" content="#0d0918"><title>プライバシーポリシー / Privacy — Dopa</title><link rel="icon" href="assets/dopa.png"><link rel="stylesheet" href="style.css"></head>
+<body>
+<a class="skip" href="#main">本文へ / Skip to content</a>
+<header class="site-header"><a class="brand" href="./"><img src="assets/dopa.png" alt="" width="38" height="38">Dopa</a><nav aria-label="Languages"><a href="#japanese" lang="ja">日本語</a><a href="#english" lang="en">English ↓</a></nav></header>
+<main id="main">
+<section id="japanese" aria-labelledby="policy-title">
+<div class="hero"><div><p class="eyebrow">PRIVACY / THE SERIOUS BIT</p><h1 id="policy-title">秘密の行き先、<br>ここに書く。</h1><p class="lead">プライバシーポリシー<br>Dopa for Vibe Coders</p><p>制定・更新：2026年10月14日<br>提供者：TABEworks</p></div><aside><p class="speech">ノリは軽く。<br>データの話はちゃんと。</p><img class="mascot" src="assets/dopa.png" alt="サングラス姿のDopa君" width="1280" height="1280"></aside></div>
+<p>Dopaは、iPadからご自身のGitHub CodespaceとClaude Code／Codexを使うアプリです。このポリシーは、Dopaと当サポートサイトで扱う情報、その目的、保存先、管理方法を説明します。</p>
+<div class="notice"><p><strong>端末だけで完結するアプリではありません。</strong> AIへ送る依頼・コード・画像などは、ご自身のCodespaceと選択したAI提供者で処理されます。第三者サービスの保持・学習利用は、ご自身の契約・設定に従います。</p></div>
+<h2>1. GitHubとAIへの接続・送信</h2>
+<p>GitHubで承認したOAuth tokenをiPadのKeychainに保存し、GitHub APIへのアクセスとCodespace内のbridgeへの認証に使います。アカウント情報、リポジトリ、Codespace情報は、保存先の選択や作業場への接続に使います。AIエージェントの認証情報はCodespace内のCLI等が管理します。</p>
+<p>依頼、会話、選択・参照されたコードやファイル、添付画像、ツールの入出力は、作業を実行するため、ご自身のCodespaceを通じて選択したAI提供者に送られます。作業内容に応じ、エージェントやユーザーが実行するコマンドから他のサービスへ通信する場合もあります。作品・リポジトリ、bridgeやCLIの履歴はCodespaceに残る場合があります。</p>
+<p>これらをTABEworksが運営する会話保存サーバーへ送る仕組みはありません。GitHubやAI提供者による処理、保持期間、学習利用、国外での処理は各サービスの契約・設定・ポリシーに従い、Dopaが一律の条件を保証するものではありません。送信したくない個人情報や秘密情報を依頼・ファイルへ含めないでください。</p>
+<h2>2. iPad内の保存と作品Preview</h2>
+<p>会話本文、Thinking、ツールの入出力、添付、作業場の選択、表示用のファイル・Diffのキャッシュ、未送信の依頼・添付、アプリ設定を端末に保存します。未送信の内容は、送信時に接続先へ渡します。初回作品の進行・確認時刻などの記録も端末内に保存し、Dopaの外部解析サーバーには送信しません。</p>
+<p>Free／Proの履歴は端末ローカルです。Proは保存件数の制限をなくしますが、端末間同期や削除済み履歴の復元を提供しません。空き容量、端末やOSのバックアップ設定もデータの保持に影響します。</p>
+<p>初回作品Previewは認証付きbridge通信で作業場のHTML・CSS・JavaScriptを取得し、永続ストアを使わないWebKitで表示・実行します。作品へ入力した内容は、その作品のコードが処理します。エディタの静的ファイル表示とは別の機能です。</p>
+<h2>3. 任意のニュース・天気</h2>
+<p>ニュース・天気は初期状態では無効です。ニュースを有効にすると、言語に応じてYahoo!ニュース、GitHub Blog、Ars Technica、NVIDIA Blogの公開RSSへ端末から接続し、IPアドレスなどの接続情報が取得先に伝わります。記事のリンクを開いた場合は、そのサイトの扱いも適用されます。</p>
+<p>都市検索には入力した都市名をApple Mapsへ送ります。天気は選択した都市の座標を小数2桁に丸めてMET Norwayへ送り、同社は座標とIPアドレス等を受け取り得ます。GPSによる現在地は取得しません。コード・会話・添付・GitHub／AIのtokenをニュース・天気の取得へ渡しません。</p>
+<p>記事、予報、都市、興味カテゴリは端末に保存します。SettingsのNews and weatherで取得の無効化、都市の削除、キャッシュ消去ができます。都市の削除は天気キャッシュも削除します。取得を無効にするだけでは、保存済みキャッシュをすべて消す操作にはなりません。</p>
+<h2>4. Dopa Proの購入・復元</h2>
+<p>購入と復元はAppleのApp Store／StoreKitで処理します。Dopaは検証済みの取引・購入権利情報を使ってProの利用可否を確認します。TABEworksがクレジットカード番号等の決済情報を受け取ることはありません。Appleによる購入情報の扱いはAppleのポリシーに従います。</p>
+<h2>5. サポートとサイトの閲覧</h2>
+<p>お問い合わせで提供いただくメールアドレス、説明、画像、ログは、調査・返信・関連する問題への対応のために使います。情報はサポート用メールサービス上に保存されます。問題対応に必要な期間保管し、不要となった情報は削除します。ただし法令対応等で保持が必要な場合があります。削除のご希望は下記窓口へご連絡ください。token、パスワード、API key、秘密鍵、機密コードは送らないでください。</p>
+<p>当サイトには独自のアクセス解析・広告・追跡コード、外部フォント、問い合わせフォームを置いていません。GitHub Pagesで配信するため、GitHubはサイト閲覧時のIPアドレス等を処理します。詳細は<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシー声明</a>をご確認ください。問い合わせリンクはご自身のメールアプリを開き、送信はご自身の操作で行います。</p>
+<h2>6. 保存データの管理・削除</h2>
+<ul>
+<li>GitHubのサインアウトは、端末に保存したGitHub tokenを削除します。GitHub側のOAuth承認の失効は、<a href="https://github.com/settings/applications">GitHubのApplications設定</a>から別途行ってください。サインアウトは端末の保存履歴を一括削除する操作ではありません。</li>
+<li>Dopaの会話削除・Freeの履歴置き換えは、その端末の対象履歴を削除します。作品、GitHubリポジトリ、Codespace、bridge／CLI側の履歴は削除しません。削除した端末履歴はProを購入しても戻りません。</li>
+<li>未送信の依頼はDopaの送信予約の操作から取り消せます。端末内のアプリデータをまとめて削除する場合は、iPadOSの設定でアプリを「削除」してください。「取り除く」はデータを残します。OSのバックアップやKeychain、外部サービス側のデータは別途管理が必要です。</li>
+<li>Codespace、リポジトリ、AI提供者の認証・履歴・保持設定はそれぞれのサービスで管理してください。TABEworksへの削除依頼で、ご自身の外部アカウントのデータを直接削除することはできません。</li>
+</ul>
+<h2>7. お問い合わせ・改定</h2>
+<p>プライバシーについての質問や、TABEworksへ提供した情報の確認・訂正・削除依頼は、<a href="mailto:contact.tabeworks@gmail.com">contact.tabeworks@gmail.com</a>へ。ご本人確認や適用される法令を踏まえて対応します。データの扱いが変わる場合は、このページと更新日を改定します。</p>
+<p>関連する提供者の情報：<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> ／ <a href="https://openai.com/policies/privacy-policy/">OpenAI</a> ／ <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> ／ <a href="https://www.apple.com/legal/privacy/">Apple</a> ／ <a href="https://www.met.no/en/About-us/privacy">MET Norway</a>。契約・地域・利用サービスによって適用文書が異なる場合があります。</p>
+</section>
+<section id="english" class="language-section" lang="en" aria-labelledby="policy-title-en">
+<p class="eyebrow">ENGLISH / THE SERIOUS BIT</p><h2 id="policy-title-en">Privacy Policy</h2><p>Dopa for Vibe Coders<br>Effective and last updated: October 14, 2026<br>Provider: TABEworks</p>
+<p>Dopa connects your iPad to your GitHub Codespace and Claude Code/Codex. This policy covers information handled by Dopa and this support website, its purposes, storage and your controls.</p>
+<div class="notice"><p><strong>This is not an entirely on-device app.</strong> Prompts, code and images sent to agents are processed in your Codespace and by your chosen AI provider. Third-party retention and training use depend on your agreements and settings.</p></div>
+<h2>1. GitHub and AI connections</h2>
+<p>Your authorized GitHub OAuth token is stored in the iPad Keychain and used for GitHub API access and authentication to the bridge in your Codespace. Account, repository and Codespace information supports workspace selection and connection. Agent credentials are managed by the CLI or related tools in your Codespace.</p>
+<p>Prompts, conversations, selected or referenced code/files, attachments and tool input/output are sent through your Codespace to your chosen AI provider to perform your tasks. Commands run by you or the agent may contact other services. Repositories and bridge/CLI histories may remain in the Codespace.</p>
+<p>Dopa does not send these to a TABEworks-operated conversation storage server. Third-party processing, retention, training use and processing abroad follow the relevant service's agreements, settings and policies; Dopa does not guarantee uniform terms. Do not include personal or secret information you do not wish to send.</p>
+<h2>2. Local storage and project Preview</h2>
+<p>Conversations, thinking, tool input/output, attachments, workspace selections, file/diff display caches, queued prompts/attachments and settings are saved on the device. Queued content is sent when the request is submitted. First-project progress and confirmation timestamps are also local and are not sent to a Dopa analytics server.</p>
+<p>Free/Pro history is local. Pro removes count limits, not storage limits, and does not provide device sync or deleted-history recovery. Device storage and OS backup settings can affect retention.</p>
+<p>First-project Preview retrieves workspace HTML/CSS/JavaScript through authenticated bridge communication and runs it in nonpersistent WebKit. Input within a project is handled by that project's code. This differs from static editor previews.</p>
+<h2>3. Optional news and weather</h2>
+<p>Both are off by default. Enabling news connects your device to public RSS from Yahoo! News, GitHub Blog, Ars Technica or NVIDIA Blog depending on language. Providers receive connection information such as your IP address. Opening an article also subjects that visit to the linked website's practices.</p>
+<p>City searches send the entered city name to Apple Maps. Weather sends selected city coordinates rounded to two decimal places to MET Norway, which may also receive your IP address. GPS location is not accessed. Code, conversations, attachments and GitHub/AI tokens are not included in news/weather requests.</p>
+<p>Items, forecasts, city and topic preferences are cached locally. Settings → News and weather lets you disable retrieval, remove the city and clear the cache. Removing the city clears weather cache; disabling retrieval alone does not erase all cached data.</p>
+<h2>4. Pro purchases and restoration</h2>
+<p>Apple processes purchases and restoration via App Store/StoreKit. Dopa uses verified transaction and entitlement information to determine Pro access. TABEworks does not receive payment card details. Apple's handling of purchase information is governed by its policies.</p>
+<h2>5. Support and website visits</h2>
+<p>Email addresses, descriptions, images and logs you provide to support are used to investigate, reply and handle related issues. Information is stored in the support email service, kept for the period needed to handle issues and deleted when no longer needed, except when retention is required for legal or similar obligations. Contact us below to request deletion. Do not send passwords, tokens, API keys, private keys or confidential code.</p>
+<p>This website adds no analytics, advertising/tracking code, external fonts or contact forms. It is hosted on GitHub Pages; GitHub processes information such as visitors' IP addresses. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Contact links open your email app; you decide whether to send.</p>
+<h2>6. Managing and deleting data</h2>
+<ul>
+<li>Signing out of GitHub removes the GitHub token stored on this device. Revoke GitHub OAuth authorization separately in <a href="https://github.com/settings/applications">GitHub Applications settings</a>. Sign-out does not erase all local history.</li>
+<li>Deleting a Dopa conversation or replacing Free history removes the affected local history, not project files, GitHub repositories, Codespaces or bridge/CLI histories. Purchasing Pro does not restore deleted local history.</li>
+<li>Cancel unsent requests using Dopa's queue controls. To remove the app's local data together, choose Delete App in iPadOS settings; Offload App keeps data. OS backups, Keychain and remote service data require separate management.</li>
+<li>Manage Codespaces, repositories, agent credentials, histories and retention through their respective services. TABEworks cannot directly delete data in your external accounts in response to a support request.</li>
+</ul>
+<h2>7. Contact and changes</h2>
+<p>For privacy questions or access, correction or deletion requests relating to information provided to TABEworks, email <a href="mailto:contact.tabeworks@gmail.com">contact.tabeworks@gmail.com</a>. Requests are handled with regard to identity verification and applicable law. Changes in practices will be reflected on this page with an updated date.</p>
+<p>Provider information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://www.met.no/en/About-us/privacy">MET Norway</a>. Applicable documents may differ by agreement, region and service.</p>
+</section>
+</main><footer class="site-footer"><p>© 2026 TABEworks · Updated 2026-10-14</p><a href="support.html">Support ↗</a><a href="#japanese">日本語 ↑</a></footer>
+</body></html>
