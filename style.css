@@ -8,7 +8,7 @@
 /* Product home */
 .home{max-width:1120px;padding-top:76px}
 .home .hero{grid-template-columns:minmax(0,1fr) 320px;gap:48px;margin-bottom:52px}
-.home .hero aside{align-self:center}
+.home .hero aside{align-self:center;justify-self:center;width:100%;max-width:240px}
 .home .hero .speech{max-width:260px;margin-inline:auto;font-size:17px}
 .home .hero .mascot{display:block;margin-top:-2px}
 .hero-caption{font-size:14px;line-height:1.9}
@@ -74,7 +74,8 @@
 .tool-grid h3{margin:18px 0 10px}
 .tool-grid p{font-size:14px;margin:0}
 .companion{display:grid;grid-template-columns:260px minmax(0,1fr);align-items:center;gap:64px}
-.companion-art img{width:100%;height:auto;display:block}
+.companion-art{width:180px;max-width:100%;justify-self:center}
+.companion-art img{width:100%;max-width:180px;height:auto;display:block}
 .companion-art .speech{max-width:230px;margin-inline:auto}
 .companion h2{font-size:clamp(25px,3vw,34px)}
 .companion p{font-size:14px}
@@ -127,7 +128,7 @@
 .tool-symbol{grid-row:1 / 3;margin-top:4px}
 .tool-grid h3{margin:0 0 8px}
 .companion{grid-template-columns:1fr;gap:24px}
-.companion-art{width:190px;justify-self:center}
+.companion-art{width:160px;justify-self:center}
 .companion h2{font-size:27px}
 .setup-flow{gap:16px;padding:20px 16px;flex-wrap:wrap}
 .setup-flow>span{font-size:15px}
