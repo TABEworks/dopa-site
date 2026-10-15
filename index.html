@@ -3,57 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Dopa for Vibe Coders。iPadからClaude Code・Codexとコードを作り、プレビュー、差分確認、コミットまで。最初のWebページから、いつものGitHubリポジトリまで。">
+<title>Dopa — iPadでClaude Code・Codexを使う開発アプリ</title>
+<meta name="description" content="iPadからClaude Code・Codexに開発を依頼。コード編集、差分確認、Git操作までDopaで。GitHub Codespacesを使う仕組み、始め方、FreeとProの違いを紹介します。">
 <meta name="theme-color" content="#0d0918">
-<title>Dopa — その怪電波、コードにしろ。 | TABEworks</title>
+<link rel="canonical" href="https://tabeworks.github.io/dopa-site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dopa for Vibe Coders">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Dopa — iPadでClaude Code・Codexを使う開発アプリ">
+<meta property="og:description" content="iPadからClaude Code・Codexに開発を依頼。コード編集、差分確認、Git操作までDopaで。GitHub Codespacesを使う仕組み、始め方、FreeとProの違いを紹介します。">
+<meta property="og:url" content="https://tabeworks.github.io/dopa-site/">
+<meta property="og:image" content="https://tabeworks.github.io/dopa-site/assets/dopa.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="1280">
+<meta property="og:image:alt" content="Dopaのサングラスをかけたマスコット">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="assets/dopa.png">
-<link rel="stylesheet" href="style.css?v=201556838175">
+<link rel="stylesheet" href="style.css?v=014a65d426fb">
 </head>
 <body>
 <a class="skip" href="#main">本文へ / Skip to content</a>
-<header class="site-header"><a class="brand" href="./"><img src="assets/dopa.png" alt="" width="38" height="38">Dopa</a><nav aria-label="Main"><a href="#features">できること</a><a href="support.html">Support ↗</a><a href="#english" lang="en">English</a></nav></header>
+<header class="site-header"><a class="brand" href="./"><img src="assets/dopa.png" alt="" width="38" height="38">Dopa</a><nav aria-label="メインナビゲーション"><a href="getting-started.html">始め方</a><a href="./#plans">料金</a><a href="support.html">サポート</a><a href="./#english" lang="en">English</a></nav></header>
 <main id="main" class="home">
 <section class="hero" aria-labelledby="hero-title">
-  <div><p class="eyebrow">FOR VIBE CODERS / BY TABEWORKS</p><h1 id="hero-title">その怪電波、<br>コードにしろ。</h1>
-    <div class="store-cta">
+  <div>
+    <p class="eyebrow brand-line">その怪電波、コードにしろ。</p>
+    <h1 id="hero-title">iPadで、<br>Claude CodeとCodex。</h1>
+    <p class="lead">AIに開発を依頼して、変更されたコードを確認。<br>編集、差分レビュー、GitHubへのpushまで操作できる、iPadの開発アプリです。</p>
+<div class="store-cta">
       <!-- Replace the placeholder App Store ID when the listing is ready. -->
-      <a class="store-button" href="https://apps.apple.com/app/id0000000000" aria-label="App Storeからダウンロード（公開準備中）"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span><span class="store-caption">iPadで、作り始めよう。</span><span class="store-title">App Storeからダウンロード</span></span></a>
+      <a class="store-button" href="https://apps.apple.com/app/id0000000000" aria-label="App Storeからダウンロード（公開準備中）"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span><span class="store-caption">Dopa for iPad</span><span class="store-title">App Storeからダウンロード</span></span></a>
       <span class="store-status">公開準備中</span>
     </div>
-    <p class="lead">思いついたら、iPadを開け。<br>Claude CodeやCodexと作って、触って、直す。<br>差分を読んで、コミットまで。</p><p class="hero-caption">Dopaは、AIとの会話も、コードも、Gitもひとつにした<br class="desktop-break">iPadの開発アプリ。サングラスの相棒つき。</p><div class="actions"><a class="button" href="#first-build">何から作る？ ↓</a><a class="button secondary" href="#features">できることを見る</a></div><p class="en" lang="en">Unhinged ideas. Actual code.<br>Build with Claude Code or Codex on your iPad.</p></div>
-  <aside><p class="speech">ノリで頼め。<br>差分は読め。</p><img class="mascot" src="assets/dopa.png" alt="黒いサングラスをかけた、白と紫の雲の相棒Dopa君" width="1280" height="1280"></aside>
+    <a class="text-link" href="getting-started.html">必要なものと始め方を見る →</a>
+    <p class="hero-requirements">iPadOS 17以降・ネット接続・GitHub Codespaces・AI認証が必要です。<a href="#plans">GitHubとAIの利用料金は別です。</a></p>
+  </div>
+  <aside><p class="speech">ノリで頼め。<br>差分は読め。</p><img class="mascot" src="assets/dopa.png" alt="サングラスの相棒、Dopa君" width="240" height="240" style="max-width:100%;height:auto"></aside>
 </section>
-<div class="platform-strip" aria-label="対応環境"><span>MADE FOR iPad</span><span>Claude Code / Codex</span><span>GitHub Codespaces</span></div>
 
 <section id="features" class="home-section" aria-labelledby="features-title">
-  <p class="eyebrow">01 / FROM IDEA TO COMMIT</p><h2 id="features-title">「作って」で始めて、<br>自分で確かめる。</h2><p class="section-intro">AIに投げっぱなしで終わらない。会話の続きも、変更の確認も、同じ作業場で。</p>
-  <div class="workflow">
-    <div class="workflow-copy"><article><span class="step-label">01 — TALK</span><h3>ざっくり頼む。途中で変える。</h3><p>Claude CodeかCodexを選んで、作りたいものを会話で依頼。進行を見て、必要な操作を承認。「やっぱこうして」も送れるし、違うと思ったら中断できます。</p></article><article><span class="step-label">02 — TRY</span><h3>最初の作品は、その場で触る。</h3><p>最初の作品づくりでは、生成されたWebページをPreviewで表示。実際に触って動きを確かめ、次の改造を同じ会話で頼めます。</p></article><article><span class="step-label">03 — REVIEW &amp; COMMIT</span><h3>変わったところを、ちゃんと読む。</h3><p>ファイルや差分のまとまりごとに変更を確認。必要ならコードを編集して、ステージ、コミット、pull、pushまで。勢いの証拠をGitに残そう。</p></article></div>
-    <figure class="demo-window"><figcaption><span class="window-dots" aria-hidden="true">● ● ●</span> IDEA → CODE <span class="demo-tag">会話・差分のイメージ</span></figcaption><div class="demo-body"><p class="demo-label">YOU</p><p class="demo-prompt">ブロック崩し、<br>全部虹色にして。</p><div class="demo-agent"><span>CODEX</span><p>ブロックの色を、列ごとに変えてみよう。</p></div><div class="demo-diff"><div class="diff-heading">blocks.js <span>DIFF</span></div><pre><code><span class="removed">− color: "#ffffff",</span>
-<span class="added">+ color: rainbow[column],</span></code></pre></div><div class="demo-bottom"><span>差分を確認 → ステージ → コミット</span><span aria-hidden="true">↗</span></div></div></figure>
-  </div>
+  <h2 id="features-title">コードが動くのは、<br>あなたのCodespace。</h2>
+  <p class="section-intro">DopaからGitHub上のリポジトリと作業環境に接続します。Claude Code／Codexはその環境で動き、iPadには会話やファイル、実行状況を表示します。</p>
+  <div class="setup-flow" aria-label="iPadのDopaから、自分のGitHub Codespaceで動くAIとコードを操作"><span>iPadのDopa<span class="setup-detail">依頼・承認・編集・確認</span></span><span class="setup-arrow" aria-hidden="true">↔</span><span>GitHub Codespaces<span class="setup-detail">Claude Code / Codex・コード・Terminal</span></span></div>
+  <ol class="workflow-steps">
+    <li><h3>会話で依頼する</h3><p>Claude CodeかCodexを選び、作りたいものや変更を伝えます。途中の質問に答え、必要な操作を承認。方針が違えば中断できます。</p></li>
+    <li><h3>変更を確かめる</h3><p>ファイルと差分を読み、必要ならエディタで修正。Markdown・HTML・SVG・JSONの静的表示と、リモートTerminalも使えます。</p></li>
+    <li><h3>Gitに残す</h3><p>残したい変更をステージして、コミット。リモートへのpush、更新を取り込むpullまでアプリ内で操作できます。</p></li>
+  </ol>
+  <p class="section-footnote">iPad上でCLIを直接動かす仕組みではありません。実行にはCodespaceへの接続が必要です。他のクライアントで始めたAIセッションの取り込みには対応していません。</p>
 </section>
 
 <section id="first-build" class="home-section" aria-labelledby="first-title">
-  <p class="eyebrow">02 / YOUR FIRST SIDE QUEST</p><h2 id="first-title">作るものない？<br>じゃあ、生やそう。</h2><p class="section-intro">初めてなら、3つの入口から。作品を選び、GitHubと作業場を準備したら、AIと相談しながら自分のひとつを作ります。</p>
-  <div class="project-grid">
-    <article class="project"><div class="project-art art-web" aria-hidden="true"><div class="mini-page"><div class="mini-avatar"></div><i></i><i></i><div class="mini-links"><b></b><b></b><b></b></div></div><span>HELLO, WORLD.</span></div><div class="project-copy"><p class="step-label">01 / WEB PAGE</p><h3>自分のWebページ</h3><p>名前、好きなこと、伝えたいこと。まずは自己紹介のページを、自分らしい見た目で。</p><p class="remix">次のひとこと →「もっと宇宙っぽく」</p></div></article>
-    <article class="project"><div class="project-art art-game" aria-hidden="true"><div class="bricks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="game-ball"></div><div class="game-paddle"></div><span>ONE MORE PLAY.</span></div><div class="project-copy"><p class="step-label">02 / BREAKOUT</p><h3>ブロック崩し</h3><p>速さ、ブロックの数、難しさ。遊びたいルールを相談して、タッチで遊べるゲームに。</p><p class="remix">次のひとこと →「ボールを増やして」</p></div></article>
-    <article class="project"><div class="project-art art-light" aria-hidden="true"><div class="light-orbit orbit-one"></div><div class="light-orbit orbit-two"></div><div class="light-dot"></div><span>TOUCH THE LIGHT.</span></div><div class="project-copy"><p class="step-label">03 / LIGHT ART</p><h3>触ると光るアート</h3><p>指の動きで生まれる光。軌跡や色、音を相談して、触って気持ちいい作品を。</p><p class="remix">次のひとこと →「余韻を長くして」</p></div></article>
-  </div><p class="section-footnote">カードは作品のイメージです。実際の見た目や動きは、AIとの会話で変わります。</p>
-  <div class="existing-repo"><span class="eyebrow">ALREADY BUILDING?</span><div><h3>いつものリポジトリからでも。</h3><p>GitHubにある既存リポジトリを選んで、作業へ。最初の作品づくりを通らず、自分のプロジェクトを続けられます。</p></div></div>
+  <h2 id="first-title">最初の作品からでも、<br>今あるリポジトリからでも。</h2>
+  <div class="entry-paths">
+    <article><h3>初めてなら、作品を選ぶところから。</h3><p>「ガイド付き」では、次の3つから選びます。GitHubへの接続と作業場の準備を進め、AIと内容を相談します。</p><ul class="project-list"><li><strong>自分のWebページ</strong><span>名前や好きなことを載せる自己紹介ページ。</span></li><li><strong>ブロック崩し</strong><span>速さや難しさを相談して作るタッチゲーム。</span></li><li><strong>光のアート</strong><span>指の動きに合わせて光る、色や軌跡の作品。</span></li></ul><p>初回作品はPreviewで動きを確認し、同じ会話で改造を頼めます。任意の開発サーバーを表示するPreviewには対応していません。</p><a class="text-link" href="getting-started.html#first-project">最初の作品を作る手順 →</a></article>
+    <article><h3>GitHubを使っているなら、続きから。</h3><p>「クイック」では、既存リポジトリを選んで作業場に接続。初回作品の選択を通らず、自分のプロジェクトに依頼を送れます。</p><p class="example-label">最初の依頼の例</p><blockquote class="request-example">このリポジトリの構成を確認して、READMEにある起動手順を教えて。まだファイルは変更しないで。</blockquote><p>いきなり修正を頼まず、作業内容を確認するところから始められます。</p><a class="text-link" href="getting-started.html#existing-project">既存リポジトリで始める手順 →</a></article>
+  </div>
 </section>
 
-<section class="home-section" aria-labelledby="tools-title"><p class="eyebrow">03 / A WORKSPACE, NOT JUST A CHAT</p><h2 id="tools-title">会話の横に、<br>ちゃんと道具がある。</h2><div class="tool-grid"><article><span class="tool-symbol" aria-hidden="true">{ }</span><h3>ファイルとエディタ</h3><p>プロジェクトのファイルを開いて、コードを確認・編集。Markdown、HTML、SVG、JSONの静的表示にも対応。</p></article><article><span class="tool-symbol" aria-hidden="true">+/−</span><h3>差分とGit</h3><p>何が変わったかを読み、残す変更を選ぶ。ステージからコミット、pull・pushまでアプリ内で。</p></article><article><span class="tool-symbol" aria-hidden="true">&gt;_</span><h3>リモートTerminal</h3><p>必要なコマンドは、自分のCodespaceで実行。会話だけでは手が届かない作業も、手元から。</p></article></div><p class="section-footnote">初回作品のPreviewはHTML・CSS・JavaScriptを実行できます。ファイル表示は静的です。任意の開発サーバーのPreview、他クライアントのセッション取り込みには対応していません。</p></section>
+<section id="plans" class="home-section" aria-labelledby="plans-title">
+  <h2 id="plans-title">Dopaの料金と、外部サービスの料金。</h2>
+  <p class="section-intro">AIへの依頼、コード編集、Git操作はFreeとProで共通です。Proは、この端末に保存する履歴を増やしたい人向けの買い切りです。</p>
+  <div class="table-wrap"><table class="plan-table"><caption>FreeとProの違い</caption><thead><tr><th scope="col">Dopa内で管理するもの</th><th scope="col">Free</th><th scope="col">Pro（買い切り）</th></tr></thead><tbody><tr><th scope="row">リポジトリ</th><td>1つ</td><td>保存件数の制限なし</td></tr><tr><th scope="row">新規会話</th><td>AIごとに1件</td><td>保存件数の制限なし</td></tr><tr><th scope="row">会話・リポジトリの切り替え</th><td>置き換える履歴の削除前に確認</td><td>履歴を保持</td></tr><tr><th scope="row">AI・編集・Git機能</th><td>共通</td><td>共通</td></tr><tr><th scope="row">ホーム画面アイコン</th><td>標準</td><td>金サングラスも選択可能</td></tr></tbody></table></div>
+  <p class="section-footnote">保存先は端末内です。空き容量が必要で、端末間同期や削除済み履歴の復元は含みません。Freeでは作業環境の既存履歴を削除せず非表示にします。</p>
+  <div class="notice"><p><strong>GitHub Codespacesの計算時間・保存容量と、AIサービスの利用料金は別です。</strong> Dopa／Proの料金に含まれません。アプリを閉じてもCodespaceが即座に停止するとは限らず、停止後も保存容量は使います。</p></div>
+  <a class="text-link" href="getting-started.html#costs">始める前に確認する料金と停止方法 →</a>
+</section>
 
-<section class="companion home-section" aria-labelledby="companion-title"><div class="companion-art"><p class="speech">いい仕事したな 😎</p><img src="assets/dopa.png" alt="サングラスの相棒、Dopa君" width="180" height="180" style="max-width:100%;height:auto" loading="lazy"></div><div><p class="eyebrow">04 / YOUR SMALL HYPE GUY</p><h2 id="companion-title">サングラスの小さいやつも、<br>一緒にいます。</h2><p>案内したり、「できた！」に反応したり、たまにひとこと挟んだり。Dopa君は、作る時間についてくる相棒です。</p><p>ニュースや天気の表示はお好みで。集中したいときは、設定でおしゃべりを控えめにもできます。</p></div></section>
+<section class="companion home-section" aria-labelledby="companion-title">
+  <div class="companion-art"><p class="speech">いい仕事したな 😎</p><img src="assets/dopa.png" alt="Dopa君" width="180" height="180" style="max-width:100%;height:auto" loading="lazy"></div>
+  <div><h2 id="companion-title">作る時間に、Dopa君。</h2><p>接続の案内や作業の節目にひとこと。サングラスの相棒が、画面のそばにいます。ニュース・天気の表示は任意。集中したいときは、おしゃべりの頻度を下げられます。</p></div>
+</section>
 
-<section class="home-section" aria-labelledby="start-title"><p class="eyebrow">05 / BEFORE YOU DOPA</p><h2 id="start-title">作業場はクラウド。<br>手元は、iPad。</h2><div class="setup-flow" aria-label="実行の仕組み"><span>iPad<span class="setup-detail">Dopaで依頼・確認</span></span><span class="setup-arrow" aria-hidden="true">↔</span><span>GitHub Codespaces<span class="setup-detail">コードとAIが動く作業場</span></span></div><p class="section-intro">AIはあなたのCodespaceで動きます。iPadOS 17以降のiPad、ネット接続、GitHub Codespaces、Claude CodeまたはCodexの認証を用意してください。</p><div class="plan-grid"><article><p class="eyebrow">DOPA FREE</p><h3>まずは、ひとつのプロジェクト。</h3><p>この端末で新規作成した1リポジトリ、AIごとに1会話を管理。会話を入れ替えるときは、ローカル履歴の削除前に確認します。</p></article><article><p class="eyebrow">DOPA PRO / ONE-TIME PURCHASE</p><h3>作るものが増えたら。</h3><p>買い切りでリポジトリと会話の保存件数制限を解除。既存の作業環境の履歴も閲覧でき、金サングラスのProアイコンも使えます。</p></article></div><div class="notice"><p><strong>AIの機能はFreeもProも共通です。</strong> GitHubの計算時間・保存容量とAIサービスの料金は別途かかる場合があり、Dopa／Proには含まれません。</p><p>履歴は端末に保存されます。空き容量が必要です。端末間同期や、削除した履歴の復元はできません。Freeでは作業環境の既存履歴を削除せず非表示にします。</p></div><a class="text-link" href="support.html">接続・料金・履歴の詳しい説明を見る ↗</a></section>
+<section class="home-section" aria-labelledby="questions-title">
+  <h2 id="questions-title">使い始める前の疑問。</h2>
+  <div class="faq">
+    <details><summary>プログラミングが初めてでも使えますか？</summary><p>作品選びから進めるガイドを用意しています。ただし、GitHubとAIサービスの認証や利用料金の確認は必要です。AIの出力をそのまま信用せず、Previewや差分で結果を確認してください。<a href="getting-started.html">始め方ガイド</a>で流れを確認できます。</p></details>
+    <details><summary>ChatGPTのチャットをiPadで開くのと何が違いますか？</summary><p>Dopaでは、Codespace内のClaude Code／Codexがリポジトリのファイルやコマンドを扱います。iPadから、その進行・承認・コード差分・Git操作を確認できます。Dopaの会話機能は、このCLIとの接続です。</p></details>
+    <details><summary>iPadだけで使えますか？ オフラインでも動きますか？</summary><p>Dopaの初期設定と操作はiPadから進めます。コードやAIが動く場所はGitHub Codespacesなので、実行にはネット接続が必要です。iPad内で完結するオフライン開発環境ではありません。</p></details>
+    <details><summary>App Storeで入手できますか？</summary><p>現在、公開準備中です。このページのApp Storeリンクは仮のリンクで、ダウンロードにはまだ使えません。公開後に正式なリンクへ切り替えます。</p></details>
+  </div>
+</section>
 
-<section id="english" class="home-section english-summary" lang="en" aria-labelledby="english-title"><p class="eyebrow">HELLO, VIBE CODERS.</p><h2 id="english-title">Unhinged ideas. Actual code.</h2><p>Build with Claude Code or Codex on your iPad. Start with a personal website, Breakout, or light art—or jump into an existing GitHub repository. Talk to your agent, follow its progress, approve actions, and interrupt when you need to.</p><p>Try your first web project in Preview, then remix it. Read file and hunk diffs, edit code, use a remote terminal, and stage, commit, pull or push. Dopa, your small companion in sunglasses, brings encouragement and optional news and weather.</p><p>Requires iPadOS 17+, internet, GitHub Codespaces and agent authentication. Agents run in your Codespace. GitHub compute/storage and AI fees are separate. Free manages one repository and one new chat per agent on this device; Pro is a one-time purchase that removes saved-history count limits. History is local, with no device sync or deleted-history recovery. Agent features are shared by Free and Pro.</p><p>First-project Preview runs HTML/CSS/JS; file previews are static. Arbitrary dev-server preview and other-client session import are not supported.</p><a class="text-link" href="support.html#english">Setup, plans &amp; support in English ↗</a></section>
+<section class="closing-cta" aria-labelledby="next-title"><h2 id="next-title">自分の環境で使えるか、確かめよう。</h2><p>必要なアカウント、料金、最初の依頼までを始め方ガイドにまとめました。</p><div class="actions"><a class="button" href="getting-started.html">Dopaの始め方を読む</a><a class="button secondary" href="support.html#contact-ja">質問する</a></div><p class="note">開発・提供：TABEworks。GitHub、OpenAI、Anthropicの公式アプリではありません。</p></section>
 
-<div class="home-links"><a class="big-link" href="support.html"><strong>詰まった？ こっち。 ↗</strong><span>サポート / Support — 接続、AIログイン、プレビュー、履歴、Proの購入・復元。</span></a><a class="big-link" href="privacy.html"><strong>秘密の行き先はこちら。 ↗</strong><span>プライバシー / Privacy — 送る情報、端末に残る情報、消せるもの。</span></a></div><p class="note">Dopaは独立したアプリです。GitHub、OpenAI、Anthropicの公式アプリではありません。</p>
+<section id="english" class="home-section english-summary" lang="en" aria-labelledby="english-title"><h2 id="english-title">Claude Code and Codex, from your iPad.</h2><p>Dopa connects your iPad to your GitHub Codespace. Ask an agent to work on your repository, review its progress and approvals, edit files, inspect diffs, and stage, commit, pull or push.</p><p>Start with a guided website, Breakout game or light-art project, or select an existing repository. First-project Preview runs HTML/CSS/JS; file previews are static. Arbitrary dev-server previews and other-client session import are not supported.</p><p>Requires iPadOS 17+, internet, GitHub Codespaces and agent authentication. GitHub compute/storage and AI fees are separate. Free manages one repository and one new chat per agent; the one-time Pro purchase removes local history count limits. No device sync or deleted-history recovery. All agent features are shared.</p><p>App Store release is in preparation. The download link is a placeholder.</p><a class="text-link" href="support.html#english">Requirements, costs &amp; support in English →</a></section>
 </main>
-<footer class="site-footer"><p>© 2026 TABEworks · Dopa for Vibe Coders</p><a href="privacy.html">Privacy</a><a href="mailto:contact.tabeworks@gmail.com">Contact</a></footer>
+<footer class="site-footer"><p>© 2026 TABEworks · Dopa for Vibe Coders</p><a href="getting-started.html">始め方</a><a href="support.html">サポート</a><a href="privacy.html">プライバシー</a><a href="mailto:contact.tabeworks@gmail.com">お問い合わせ</a></footer>
 </body>
 </html>
