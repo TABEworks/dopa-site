@@ -19,7 +19,7 @@
 <meta property="og:image:alt" content="Dopaのサングラスをかけたマスコット">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="assets/dopa.png">
-<link rel="stylesheet" href="style.css?v=014a65d426fb">
+<link rel="stylesheet" href="style.css?v=bd2d092d5919">
 </head>
 <body>
 <a class="skip" href="#main">本文へ / Skip to content</a>
@@ -33,7 +33,14 @@
 
   <section id="requirements"><h2>始める前に用意するもの</h2><dl class="requirements-list"><div><dt>iPadとインターネット</dt><dd>iPadOS 17以降。AIの実行と作業場への接続にネットが必要です。</dd></div><div><dt>GitHubアカウント</dt><dd>Codespacesを利用でき、作業するリポジトリにアクセスできるアカウント。初めてなら、ガイド付き設定の途中でGitHubのアカウント作成へ進めます。</dd></div><div><dt>Claude CodeかCodexの認証</dt><dd>利用するCLIが対応するアカウント、またはAPI認証情報を用意します。AIを選ぶ操作と、認証完了は別です。Dopa内の案内に従って公式認証画面へ進みます。</dd></div></dl><p>GitHubのリポジトリはコードの保存先、Codespaceはコードやコマンドを動かす作業場です。Dopaはこの2つをiPadから扱います。</p></section>
 
-  <section id="costs"><h2>料金は3つに分けて確認する</h2><ol class="guide-steps"><li><h3>DopaのFree／Pro</h3><p>FreeでもAI・編集・Gitの機能は共通です。Proは端末内の会話・リポジトリの保存件数制限を解除する買い切り。<a href="./#plans">FreeとProの比較</a>を確認してください。</p></li><li><h3>GitHub Codespaces</h3><p>計算時間と保存容量はGitHub側の利用枠・契約に従います。作業場を起動する前に、GitHubの利用量と予算を確認してください。確認場所は<a href="https://docs.github.com/en/billing/how-tos/products/estimate-spending">GitHub公式の利用額確認ガイド</a>に説明されています。停止しても保存容量の消費は続きます。</p></li><li><h3>Claude Code／Codex</h3><p>AIの料金・上限は、それぞれの提供者との契約や認証方法によります。DopaやProの購入にAIの利用枠は含まれません。</p></li></ol><p>アプリを閉じた時点で課金対象の作業場が必ず停止するわけではありません。終了時の確認方法は<a href="#finish">作業の終え方</a>へ。</p></section>
+  <section id="plans" aria-labelledby="plans-title">
+  <h2 id="plans-title">FreeとProの違い</h2>
+  <p class="section-intro">AIへの依頼、コード編集、Git操作はFreeとProで共通です。Proは、この端末に保存する履歴を増やしたい人向けの買い切りです。</p>
+  <div class="table-wrap"><table class="plan-table"><caption>FreeとProの違い</caption><thead><tr><th scope="col">Dopa内で管理するもの</th><th scope="col">Free</th><th scope="col">Pro（買い切り）</th></tr></thead><tbody><tr><th scope="row">リポジトリ</th><td>1つ</td><td>保存件数の制限なし</td></tr><tr><th scope="row">新規会話</th><td>AIごとに1件</td><td>保存件数の制限なし</td></tr><tr><th scope="row">会話・リポジトリの切り替え</th><td>置き換える履歴の削除前に確認</td><td>履歴を保持</td></tr><tr><th scope="row">AI・編集・Git機能</th><td>共通</td><td>共通</td></tr><tr><th scope="row">ホーム画面アイコン</th><td>標準</td><td>金サングラスも選択可能</td></tr></tbody></table></div>
+  <p class="section-footnote">保存先は端末内です。空き容量が必要で、端末間同期や削除済み履歴の復元は含みません。Freeでは作業環境の既存履歴を削除せず非表示にします。</p>
+</section>
+
+  <section id="costs"><h2>料金は3つに分けて確認する</h2><ol class="guide-steps"><li><h3>DopaのFree／Pro</h3><p>FreeでもAI・編集・Gitの機能は共通です。Proは端末内の会話・リポジトリの保存件数制限を解除する買い切り。<a href="#plans">FreeとProの比較</a>を確認してください。</p></li><li><h3>GitHub Codespaces</h3><p>計算時間と保存容量はGitHub側の利用枠・契約に従います。作業場を起動する前に、GitHubの利用量と予算を確認してください。確認場所は<a href="https://docs.github.com/en/billing/how-tos/products/estimate-spending">GitHub公式の利用額確認ガイド</a>に説明されています。停止しても保存容量の消費は続きます。</p></li><li><h3>Claude Code／Codex</h3><p>AIの料金・上限は、それぞれの提供者との契約や認証方法によります。DopaやProの購入にAIの利用枠は含まれません。</p></li></ol><p>アプリを閉じた時点で課金対象の作業場が必ず停止するわけではありません。終了時の確認方法は<a href="#finish">作業の終え方</a>へ。</p></section>
 
   <section id="first-project"><h2>初めてなら、ガイド付きで作品を作る</h2><ol class="guide-steps"><li><h3>作品を選ぶ</h3><p>Welcomeから最初の作品づくりへ進みます。「自分のWebページ」「ブロック崩し」「光のアート」の3つから選んでください。</p></li><li><h3>GitHubとAIを選ぶ</h3><p>GitHubを認証し、Claude CodeかCodexを選びます。保存先は新しいリポジトリを作成します。名前と公開範囲を確認してください。</p></li><li><h3>作業場を準備する</h3><p>費用の説明と設定内容を確認して、Codespaceを準備・起動します。接続が完了すると会話画面へ進みます。起動時間は環境や外部サービスの状態によって変わります。</p></li><li><h3>AIを認証して依頼する</h3><p>案内に従ってAIを認証します。送信する依頼と「作成条件を見る」の内容を確認してSEND。AIが作品の内容や設定を質問したら答えます。</p></li><li><h3>Previewで操作し、改造する</h3><p>生成されたWebページを読み込み、表示だけでなく操作も試します。ブロック崩しなら、実際にパドルを動かしてみましょう。変えたいところは同じ会話で依頼します。</p></li></ol><p class="example-label">ブロック崩しを遊んだあとの依頼例</p><blockquote class="request-example">ボールが速くて追いつけないので、速さを少し下げて。ブロックの数と色はそのままにして。</blockquote><p>AIの出力は毎回同じではありません。表示できない場合はPreviewのエラー詳細を確認し、案内された修復依頼の内容を読んでから送信します。初回作品のPreviewはHTML・CSS・JavaScript向けで、任意の開発サーバーを表示する機能ではありません。</p></section>
 
